@@ -5,12 +5,35 @@ A smart AI-powered email assistant that can **read**, **classify**, **generate r
 ---
 
 
-**Core Features:**
+## 📌 **Core Features:**
 - 🔍 Reads unread emails from Gmail
 - 🧠 Classifies emails using ML/NLP
 - ✍️ Drafts smart replies using Gemini AI
 - 🔁 Accepts feedback and improves replies
-- 📦 Stores processed emails and replies locally
+- 📦 Stores processed emails and replies on Draft Mail
+
+---
+
+## 🧠 Technologies Used
+
+- Python
+- Gmail API
+- Google Gemini AI
+- scikit-learn / spaCy (for classification)
+- JSON / CSV (data persistence)
+
+---
+
+## ✨ Usage Flow
+
+1. **Agent logs into Gmail**
+2. **Fetches unread emails**
+3. **Classifies them (e.g., Work, Personal, Spam)**
+4. **Generates a draft reply using Gemini AI**
+5. **Displays it to you**
+6. **You approve or give feedback**
+7. **Agent refines the reply**
+8. **Stores response + feedback for future learning**
 
 ---
 
@@ -68,18 +91,7 @@ python main.py
 
 ---
 
-## ✨ Usage Flow
 
-1. **Agent logs into Gmail**
-2. **Fetches unread emails**
-3. **Classifies them (e.g., Work, Personal, Spam)**
-4. **Generates a draft reply using Gemini AI**
-5. **Displays it to you**
-6. **You approve or give feedback**
-7. **Agent refines the reply**
-8. **Stores response + feedback for future learning**
-
----
 
 ## 📁 Sample Output (stored locally)
 
@@ -113,15 +125,6 @@ We welcome contributions! Feel free to fork the repo, suggest improvements, or o
 
 ---
 
-## 🧠 Technologies Used
-
-- Python
-- Gmail API
-- Google Gemini AI
-- scikit-learn / spaCy (for classification)
-- JSON / CSV (data persistence)
-
----
 
 ## 📞 Contact
 
