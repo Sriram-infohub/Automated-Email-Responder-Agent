@@ -4,9 +4,6 @@ A smart AI-powered email assistant that can **read**, **classify**, **generate r
 
 ---
 
-## 🚀 Demo
-
-![Email Bot Flow](https://github.com/yourusername/email-agent-demo.gif) <!-- Optional: Add a demo GIF or screenshot -->
 
 **Core Features:**
 - 🔍 Reads unread emails from Gmail
@@ -21,14 +18,16 @@ A smart AI-powered email assistant that can **read**, **classify**, **generate r
 
 ```
 📁 email_agent_project/
-├── main.py              # Orchestrates all components
-├── classify.py          # Classifies emails
-├── fetch.py             # Fetches emails using Gmail API
-├── generate.py          # Generates smart replies using Gemini API
-├── store.py             # Stores responses & feedback
-├── utils.py             # Helper functions
-├── config.json          # API keys and credentials
-└── requirements.txt     # Python dependencies
+├── .env                          # load environment variables securely.
+├── credentials.json              # Gmail API access on Google Cloud.
+├── email_classifier.py           # Classifies emails
+├── email_reader.py               # Fetches emails using Gmail API
+├── email_responder.py            # Generates smart replies using Gemini API
+├── feedback_log.json             # Stores responses & feedback
+├── feedback_manager.py           # Helper functions
+├── gamil_draft_saver.py          # saves draft emails in a Gmail account
+├── main.py                       # Orchestrates all components
+└── requirements.txt              # Python dependencies
 ```
 
 ---
@@ -45,12 +44,13 @@ A smart AI-powered email assistant that can **read**, **classify**, **generate r
 ### 2. 🔑 Gemini API Setup
 
 - Create a Gemini API key from [Google AI Studio](https://aistudio.google.com/app/apikey)
-- Add the key to `config.json` like this:
+- Add the key to `.env` like this:
 
 ```json
 {
-  "gmail_user": "youremail@gmail.com",
-  "gemini_api_key": "YOUR_GEMINI_API_KEY"
+  "EMAIL=your-email(create-dummy)",
+  "PASSWORD=your-password-or-app password",
+  "GENAI_API_KEY=your-api-key"
 }
 ```
 
@@ -125,7 +125,7 @@ We welcome contributions! Feel free to fork the repo, suggest improvements, or o
 
 ## 📞 Contact
 
-**Author**: [Sriram Kannan](https://www.linkedin.com/in/sriram-k-94b539283)  
+**Author**: [Sriram K](https://www.linkedin.com/in/sriram-k-94b539283)  
 📧 sriramkannanofficial@gmail.com  
 📍 Coimbatore, India
 
